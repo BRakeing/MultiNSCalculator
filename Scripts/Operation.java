@@ -1,4 +1,6 @@
-public class operation {
+package Scripts;
+
+public class Operation {
 
     private double dA;
     private double dB;
@@ -8,20 +10,20 @@ public class operation {
     
     private char oper;
 
-    public operation(int a, char operation) {
+    public Operation(int a, char operation) {
         this.iA = a;
         this.oper = operation;
     }
-    public operation (int a, int b, char operation) {
+    public Operation (int a, int b, char operation) {
         this.iA = a;
         this.iB = b;
         this.oper = operation;
     }
-    public operation(double a, char operation) {
+    public Operation(double a, char operation) {
         this.dA = a;
         this.oper = operation;
     }
-    public operation (double a, double b, char operation) {
+    public Operation (double a, double b, char operation) {
         this.dA = a;
         this.dB = b;
         this.oper = operation;

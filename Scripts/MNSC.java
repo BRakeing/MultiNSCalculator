@@ -1,3 +1,5 @@
+package Scripts;
+
 import java.util.Scanner;
 
 public class MNSC {
@@ -5,7 +7,9 @@ public class MNSC {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println(calculator.sequence("!6").get(0).resultInt());
+        Calculator.calcSetup();
+
+        System.out.println(Calculator.sequence("!6"));
 
         in.close();
     }

@@ -1,19 +1,24 @@
+package Scripts;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class calculator {
+public class Calculator {
 
     static List<Character> listOfFunctionalCharacters = new ArrayList<>();
 
     public static void calcSetup() {
+        for (int i = 0; i < Filer.readFile("specialCharecters.txt").size(); i++) {
+            listOfFunctionalCharacters.add(Filer.readFile("specialCharecters.txt").get(i).charAt(0));
+        }
     }
     
-    public static List<operation> sequence(String oper) {
+    public static List<Operation> sequence(String oper) {
 
-        List<operation> listOfOper = new ArrayList<>();
+        List<Operation> listOfOper = new ArrayList<>();
         int count = 0;
 
-        char cash = 266;
+        char cash = 60000;
         System.out.println(cash);
 
         for (int i = oper.length() - 1; i >= 0; i--) {
