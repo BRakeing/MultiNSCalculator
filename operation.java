@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class operation {
 
     private double dA;
@@ -29,8 +27,33 @@ public class operation {
         this.oper = operation;
     }
 
+    public int factorial(int n) {
+        int out = 1;
+        for (int i = n; i > 1; i--) {
+            out *= i;
+        }
+        return out;
+    }
+
+    public double factorial(double n) {
+        double out = 1;
+        for (double i = n; i > 1; i--) {
+            out *= i;
+        }
+        return out;
+    }
+
     public int resultInt() {
-        return 0;
+        int out = 0;
+        switch (oper) {
+            case '!':
+                out = factorial(iA);
+                break;
+        
+            default:
+                break;
+        }
+        return out;
     }
 
     public double resultDouble() {
