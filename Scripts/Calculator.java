@@ -18,6 +18,7 @@ public class Calculator {
         List<Operation> listOfOper = new ArrayList<>();
         int count = 0;
 
+        //Useing UTF-16
         char cash = 60000;
         System.out.println(cash);
 
